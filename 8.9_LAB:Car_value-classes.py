@@ -18,7 +18,6 @@
 class Car:
     def __init__(self, purchase_price=0):
         self.model_year = 0
-        # TODO: Declare purchase_price attribute
         self.purchase_price = purchase_price
 
         self.current_value = 0
@@ -29,7 +28,6 @@ class Car:
         car_age = current_year - self.model_year
         self.current_value = round(self.purchase_price * (1 - depreciation_rate) ** car_age)
 
-    # TODO: Define print_info() method to output model_year, purchase_price, and current_value
     def print_info(self):
         print('Car\'s information:')
         print('   Model year: {}'.format(self.model_year))
